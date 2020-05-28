@@ -4,7 +4,11 @@ import { Switch, Route } from 'react-router-dom';
 
 import Login from '../pages/Login';
 import Home from '../pages/Home';
-import Dashboard from '../pages/Dashboard'
+import Expense from '../pages/Expense';
+import Dashboard from '../pages/Dashboard';
+import Partner from '../pages/register/partner';
+import Pdv from '../pages/register/pdv';
+import Operation from '../pages/register/operation';
 
 export const Routes: React.FC = () => (
   <Switch>
@@ -15,6 +19,10 @@ export const Routes: React.FC = () => (
 
 export const RoutesHome: React.FC = () => (
   <Switch>
-    <Route path="/home/1" component={Dashboard} />
+    <Route path="/home/despesas" component={Expense} />
+    <Route path="/home/dashboard" component={Dashboard} />
+    <Route path="/home/operacao" component={Operation} />
+    <Route path="/home/pdv" component={Pdv} />
+    <Route path="/home/parceiro" component={Partner} />
   </Switch>
 );

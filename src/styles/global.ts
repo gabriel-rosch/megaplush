@@ -19,7 +19,7 @@ export default createGlobalStyle`
     max-width: 1366px;
     height: 100%;
     margin: 0 auto;
-    padding: 40px 10px;
+    padding: 0 10px 10px 10px;
   }
   #login {
     margin-top: 80px;
